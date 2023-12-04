@@ -1,0 +1,1 @@
+Creazione carosello (javascript+html+css) con aggiunta di testo
