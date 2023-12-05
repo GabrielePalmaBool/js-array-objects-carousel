@@ -5,9 +5,8 @@ Dato un array di oggetti letterali con: - url dell’immagine - titolo - descriz
 Creare un carosello come nella foto allegata.
 
     bonus: aggiunta immagini Thumbnail 
+
 */
-
-
 
 
 //Svolgimento
@@ -29,7 +28,7 @@ const ItemCarousel = [
     {
         "titolo": "Marvel\'s Spiderman Miles Morale",
         "descrizione": "Experience the rise of Miles Morales as the new hero masters incredible, <br> explosive new powers to become his own Spider-Man.",
-        "url":"img/01.webp",
+        "url":"img/01dsfdas.webp",
         "numero" : "uno"
     },
 
@@ -62,9 +61,14 @@ const ItemCarousel = [
 
 function Population(){
 
+    
+
     //imposto un filtro sul mio array di oggetti
     ItemCarousel.filter ((index) => {
         
+        index = index+1;
+
+        console.log( index.url);
         //creo una variabile per l'inserimetno dei dati in pagina
         let data = 0;
 
@@ -78,6 +82,11 @@ function Population(){
                     <h5>${index.titolo}</h5>
                     <p>${index.descrizione}</p>
                 </div>
+
+                <a target="_blank" href="${index.url}">
+                <img src="${index.url}" alt="immagine carosel">
+                </a>
+
                 </div>`;
 
             }
